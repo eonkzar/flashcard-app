@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Box, Text, useColorMode, Button, VStack, HStack, Image, Grid, GridItem, Slide } from '@chakra-ui/react'
+import { Box, Text, useColorMode, Button, VStack, HStack, Image, Slide } from '@chakra-ui/react'
 import { ChevronLeftIcon, ChevronRightIcon } from '@chakra-ui/icons'
 
 interface FlashCardProps {
