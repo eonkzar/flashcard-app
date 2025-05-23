@@ -94,6 +94,7 @@ function App() {
       flexDirection="column"
       alignItems="center"
       gap={8}
+      onClick={(e) => e.stopPropagation()}
     >
       <Box w="full" maxW="800px" pt={4}>
         <HStack justify="space-between" mb={8}>

@@ -192,7 +192,7 @@ const FlashCard = ({
             </Box>
           </Box>
         </Box>
-        <Box display="flex" gap={4} w="full">
+        <Box display="flex" gap={4} w="full" onClick={(e) => e.stopPropagation()}>
           <Button
             leftIcon={<ChevronLeftIcon />}
             colorScheme="gray"
@@ -222,18 +222,20 @@ const FlashCard = ({
       </VStack>
 
       {/* Backdrop */}
-      <Fade in={showExplanation}>
-        <Box
-          position="fixed"
-          top="0"
-          left="0"
-          right="0"
-          bottom="0"
-          bg="blackAlpha.600"
-          zIndex={5}
-          onClick={toggleExplanation}
-        />
-      </Fade>
+      {showExplanation && (
+        <Fade in={showExplanation}>
+          <Box
+            position="fixed"
+            top="0"
+            left="0"
+            right="0"
+            bottom="0"
+            bg="blackAlpha.600"
+            zIndex={5}
+            onClick={toggleExplanation}
+          />
+        </Fade>
+      )}
 
       {/* Explanation Overlay */}
       <Slide
