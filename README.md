@@ -1,5 +1,7 @@
 # Medical Flashcard App
 
+[![Deploy to GitHub Pages](https://github.com/eonkzar/flashcard-app/actions/workflows/deploy.yml/badge.svg)](https://github.com/eonkzar/flashcard-app/actions/workflows/deploy.yml)
+
 An interactive flashcard application for medical students and professionals, built with React, TypeScript, and Chakra UI.
 
 Visit the live app: https://eonkzar.github.io/flashcard-app/
