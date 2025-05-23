@@ -1524,7 +1524,7 @@ export const flashcards: Flashcard[] = [
     question: 'What are the signs of alcohol withdrawal?',
     answer: 'Tremors, anxiety, tachycardia, hypertension, seizures, delirium tremens.',
     explanation: {
-      detailed: 'Alcohol withdrawal progresses in stages:\n\n1. Early signs:\n   - Tremors\n   - Anxiety\n   - Autonomic hyperactivity\n2. Intermediate phase:\n   - Seizures\n   - Hallucinations\n   - Agitation\n3. Late manifestations:\n   - Delirium tremens\n   - Severe autonomic changes\n   - Mental status changes\n4. Monitoring needs:\n   - CIWA score\n   - Vital signs\n   - Mental status\n5. Risk factors:\n   - Duration of use\n   - Previous withdrawals\n   - Comorbidities\n6. Treatment approach:\n   - Benzodiazepines\n   - Supportive care\n   - Prevention of complications',
+      detailed: 'Alcohol withdrawal progresses in stages:\n\n1. Early signs:\n   - Tremors\n   - Anxiety\n   - Autonomic hyperactivity\n\n2. Intermediate phase:\n   - Seizures\n   - Hallucinations\n   - Agitation\n\n3. Late manifestations:\n   - Delirium tremens\n   - Severe autonomic changes\n   - Mental status changes\n\n4. Monitoring needs:\n   - CIWA score\n   - Vital signs\n   - Mental status\n\n5. Risk factors:\n   - Duration of use\n   - Previous withdrawals\n   - Comorbidities\n\n6. Treatment approach:\n   - Benzodiazepines\n   - Supportive care\n   - Prevention of complications',
       images: [],
       relatedConcepts: [
         'Withdrawal management',

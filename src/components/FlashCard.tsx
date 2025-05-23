@@ -295,9 +295,30 @@ const FlashCard = ({
               fontSize="sm"
               color={colorMode === 'dark' ? 'gray.200' : 'gray.600'}
               whiteSpace="pre-wrap"
-            >
-              {explanation}
-            </Text>
+              sx={{
+                '& > ol': {
+                  listStyleType: 'decimal',
+                  pl: 4,
+                  '& > li': {
+                    mb: 4,
+                  }
+                },
+                '& ul': {
+                  listStyleType: 'disc',
+                  pl: 4,
+                  '& > li': {
+                    mb: 2,
+                  }
+                }
+              }}
+              dangerouslySetInnerHTML={{
+                __html: explanation.replace(/^(\d+\.)/gm, '<ol><li>$1')
+                                   .replace(/\n- /g, '</li><li>')
+                                   .replace(/(?=\n\d+\.)/g, '</li></ol>')
+                                   .replace(/^- /gm, '<ul><li>')
+                                   .replace(/(?=\n\n)/g, '</li></ul>')
+              }}
+            />
 
             {images && images.length > 0 && (
               <VStack spacing={4} align="stretch">
