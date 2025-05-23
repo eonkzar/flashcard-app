@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Box, Text, useColorMode, Button, VStack, HStack, Image, Slide } from '@chakra-ui/react'
+import { Box, Text, useColorMode, Button, VStack, HStack, Image, Slide, Fade } from '@chakra-ui/react'
 import { ChevronLeftIcon, ChevronRightIcon } from '@chakra-ui/icons'
 
 interface FlashCardProps {
@@ -187,6 +187,20 @@ const FlashCard = ({ question, answer, explanation, images, onNext, onPrevious }
         </Box>
       </VStack>
 
+      {/* Backdrop */}
+      <Fade in={showExplanation}>
+        <Box
+          position="fixed"
+          top="0"
+          left="0"
+          right="0"
+          bottom="0"
+          bg="blackAlpha.600"
+          zIndex={5}
+          onClick={toggleExplanation}
+        />
+      </Fade>
+
       {/* Explanation Overlay */}
       <Slide
         direction="right"
@@ -208,6 +222,7 @@ const FlashCard = ({ question, answer, explanation, images, onNext, onPrevious }
           borderColor={colorMode === 'dark' ? 'gray.700' : 'gray.100'}
           overflowY="auto"
           boxShadow="lg"
+          onClick={(e) => e.stopPropagation()}
           css={{
             '&::-webkit-scrollbar': {
               width: '4px',
