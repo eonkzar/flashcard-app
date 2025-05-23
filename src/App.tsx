@@ -1,10 +1,13 @@
 import { Box, Text, IconButton, useColorMode, Heading, HStack, Progress } from '@chakra-ui/react'
-import { SunIcon, MoonIcon } from '@chakra-ui/icons'
+import { SunIcon, MoonIcon, HamburgerIcon } from '@chakra-ui/icons'
 import { FaHeart, FaLungs, FaSyringe, FaBrain, FaLayerGroup } from 'react-icons/fa'
 import { GiMedicines } from 'react-icons/gi'
 import { useState, Suspense, useEffect } from 'react'
 import FlashCard from './components/FlashCard'
 import { flashcards, Category } from './data/flashcards'
+import { FavoritesDrawer } from './components/FavoritesDrawer'
+import { useFavorites } from './hooks/useFavorites'
+import type { FlashCard as FlashCardType } from './types'
 
 // Fisher-Yates shuffle algorithm
 const shuffleArray = <T,>(array: T[]): T[] => {
@@ -21,6 +24,8 @@ function App() {
   const [selectedCategory, setSelectedCategory] = useState<Category | 'All'>('All')
   const [currentCardIndex, setCurrentCardIndex] = useState(0)
   const [shuffledCards, setShuffledCards] = useState(shuffleArray(flashcards))
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false)
+  const { favorites, addToFavorites, removeFromFavorites, isFavorite } = useFavorites()
 
   // Reshuffle cards when category changes
   useEffect(() => {
@@ -45,6 +50,21 @@ function App() {
 
   const handlePreviousCard = () => {
     setCurrentCardIndex((prev) => (prev - 1 + categoryCards.length) % categoryCards.length)
+  }
+
+  const handleSelectFavoriteCard = (card: FlashCardType) => {
+    const categoryCards = selectedCategory === 'All' 
+      ? shuffledCards 
+      : shuffledCards.filter(c => c.category === selectedCategory)
+    
+    const cardIndex = categoryCards.findIndex(c => c.id === card.id)
+    if (cardIndex !== -1) {
+      setCurrentCardIndex(cardIndex)
+    } else {
+      setSelectedCategory('All')
+      const allCardsIndex = shuffledCards.findIndex(c => c.id === card.id)
+      setCurrentCardIndex(allCardsIndex)
+    }
   }
 
   const getCategoryIcon = (category: Category | 'All') => {
@@ -77,17 +97,27 @@ function App() {
     >
       <Box w="full" maxW="800px" pt={4}>
         <HStack justify="space-between" mb={8}>
-          <IconButton
-            aria-label="Toggle color mode"
-            icon={colorMode === 'dark' ? <SunIcon /> : <MoonIcon />}
-            onClick={toggleColorMode}
-            size="lg"
-            variant="ghost"
-            color={colorMode === 'dark' ? 'yellow.200' : 'gray.600'}
-            _hover={{
-              bg: colorMode === 'dark' ? 'gray.700' : 'gray.200'
-            }}
-          />
+          <HStack spacing={4}>
+            <IconButton
+              aria-label="Open menu"
+              icon={<HamburgerIcon />}
+              onClick={() => setIsDrawerOpen(true)}
+              size="lg"
+              variant="ghost"
+              color={colorMode === 'dark' ? 'gray.200' : 'gray.600'}
+            />
+            <IconButton
+              aria-label="Toggle color mode"
+              icon={colorMode === 'dark' ? <SunIcon /> : <MoonIcon />}
+              onClick={toggleColorMode}
+              size="lg"
+              variant="ghost"
+              color={colorMode === 'dark' ? 'yellow.200' : 'gray.600'}
+              _hover={{
+                bg: colorMode === 'dark' ? 'gray.700' : 'gray.200'
+              }}
+            />
+          </HStack>
           <Text color={colorMode === 'dark' ? 'gray.400' : 'gray.600'} fontWeight="medium">
             {currentCardIndex + 1}/{categoryCards.length}
           </Text>
@@ -168,6 +198,14 @@ function App() {
               images={currentCard.explanation.images}
               onNext={handleNextCard}
               onPrevious={handlePreviousCard}
+              isFavorite={isFavorite(currentCard.id)}
+              onToggleFavorite={() => {
+                if (isFavorite(currentCard.id)) {
+                  removeFromFavorites(currentCard.id)
+                } else {
+                  addToFavorites(currentCard)
+                }
+              }}
             />
           </Suspense>
         </Box>
@@ -185,6 +223,14 @@ function App() {
           />
         </Box>
       </Box>
+
+      <FavoritesDrawer
+        isOpen={isDrawerOpen}
+        onClose={() => setIsDrawerOpen(false)}
+        favorites={favorites}
+        onRemoveFromFavorites={removeFromFavorites}
+        onSelectCard={handleSelectFavoriteCard}
+      />
     </Box>
   )
 }

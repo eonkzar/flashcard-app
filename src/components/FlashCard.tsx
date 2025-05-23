@@ -1,6 +1,7 @@
 import { useState } from 'react'
-import { Box, Text, useColorMode, Button, VStack, HStack, Image, Slide, Fade } from '@chakra-ui/react'
+import { Box, Text, useColorMode, Button, VStack, HStack, Image, Slide, Fade, IconButton } from '@chakra-ui/react'
 import { ChevronLeftIcon, ChevronRightIcon } from '@chakra-ui/icons'
+import { FaHeart, FaRegHeart } from 'react-icons/fa'
 
 interface FlashCardProps {
   question: string;
@@ -13,9 +14,20 @@ interface FlashCardProps {
   }>;
   onNext: () => void;
   onPrevious: () => void;
+  isFavorite: boolean;
+  onToggleFavorite: () => void;
 }
 
-const FlashCard = ({ question, answer, explanation, images, onNext, onPrevious }: FlashCardProps) => {
+const FlashCard = ({ 
+  question, 
+  answer, 
+  explanation, 
+  images, 
+  onNext, 
+  onPrevious,
+  isFavorite,
+  onToggleFavorite 
+}: FlashCardProps) => {
   const [isFlipped, setIsFlipped] = useState(false)
   const [showExplanation, setShowExplanation] = useState(false)
   const { colorMode } = useColorMode()
@@ -92,6 +104,17 @@ const FlashCard = ({ question, answer, explanation, images, onNext, onPrevious }
                 >
                   Question
                 </Text>
+                <IconButton
+                  aria-label={isFavorite ? "Remove from favorites" : "Add to favorites"}
+                  icon={isFavorite ? <FaHeart /> : <FaRegHeart />}
+                  onClick={(e) => {
+                    e.stopPropagation()
+                    onToggleFavorite()
+                  }}
+                  colorScheme={isFavorite ? "red" : "gray"}
+                  variant="ghost"
+                  size="sm"
+                />
               </HStack>
               <Text
                 color={colorMode === 'dark' ? 'white' : 'gray.800'}
@@ -133,6 +156,17 @@ const FlashCard = ({ question, answer, explanation, images, onNext, onPrevious }
                 >
                   Answer
                 </Text>
+                <IconButton
+                  aria-label={isFavorite ? "Remove from favorites" : "Add to favorites"}
+                  icon={isFavorite ? <FaHeart /> : <FaRegHeart />}
+                  onClick={(e) => {
+                    e.stopPropagation()
+                    onToggleFavorite()
+                  }}
+                  colorScheme={isFavorite ? "red" : "gray"}
+                  variant="ghost"
+                  size="sm"
+                />
               </HStack>
               <VStack spacing={4} flex={1}>
                 <Text
