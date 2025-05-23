@@ -1,5 +1,5 @@
-import { Box, Text, IconButton, useColorMode, VStack, Heading, HStack, Progress } from '@chakra-ui/react'
-import { SunIcon, MoonIcon, ChevronLeftIcon, ChevronRightIcon } from '@chakra-ui/icons'
+import { Box, Text, IconButton, useColorMode, Heading, HStack, Progress } from '@chakra-ui/react'
+import { SunIcon, MoonIcon } from '@chakra-ui/icons'
 import { FaHeart, FaLungs, FaSyringe, FaBrain } from 'react-icons/fa'
 import { GiMedicines } from 'react-icons/gi'
 import { useState, Suspense } from 'react'
@@ -147,7 +147,6 @@ function App() {
               images={currentCard.explanation.images}
               onNext={handleNextCard}
               onPrevious={handlePreviousCard}
-              cardNumber={currentCardIndex + 1}
             />
           </Suspense>
         </Box>

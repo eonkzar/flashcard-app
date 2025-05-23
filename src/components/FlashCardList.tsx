@@ -1,5 +1,5 @@
 import { Box } from '@chakra-ui/react'
-import type { FlashCard } from '../App'
+import type { FlashCard } from '../types'
 import FlashCardItem from './FlashCardItem'
 
 interface FlashCardListProps {

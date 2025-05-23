@@ -13,10 +13,9 @@ interface FlashCardProps {
   }>;
   onNext: () => void;
   onPrevious: () => void;
-  cardNumber: number;
 }
 
-const FlashCard = ({ question, answer, explanation, images, onNext, onPrevious, cardNumber }: FlashCardProps) => {
+const FlashCard = ({ question, answer, explanation, images, onNext, onPrevious }: FlashCardProps) => {
   const [isFlipped, setIsFlipped] = useState(false)
   const [showExplanation, setShowExplanation] = useState(false)
   const { colorMode } = useColorMode()
