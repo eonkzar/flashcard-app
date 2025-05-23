@@ -1,23 +1,42 @@
 import { Box, Text, IconButton, useColorMode, Heading, HStack, Progress } from '@chakra-ui/react'
 import { SunIcon, MoonIcon } from '@chakra-ui/icons'
-import { FaHeart, FaLungs, FaSyringe, FaBrain } from 'react-icons/fa'
+import { FaHeart, FaLungs, FaSyringe, FaBrain, FaLayerGroup } from 'react-icons/fa'
 import { GiMedicines } from 'react-icons/gi'
-import { useState, Suspense } from 'react'
+import { useState, Suspense, useEffect } from 'react'
 import FlashCard from './components/FlashCard'
 import { flashcards, Category } from './data/flashcards'
 
+// Fisher-Yates shuffle algorithm
+const shuffleArray = <T,>(array: T[]): T[] => {
+  const shuffled = [...array]
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]]
+  }
+  return shuffled
+}
+
 function App() {
   const { colorMode, toggleColorMode } = useColorMode()
-  const [selectedCategory, setSelectedCategory] = useState<Category>('Cardiovascular')
+  const [selectedCategory, setSelectedCategory] = useState<Category | 'All'>('All')
   const [currentCardIndex, setCurrentCardIndex] = useState(0)
+  const [shuffledCards, setShuffledCards] = useState(shuffleArray(flashcards))
 
-  const categoryCards = flashcards.filter(card => card.category === selectedCategory)
+  // Reshuffle cards when category changes
+  useEffect(() => {
+    const filteredCards = selectedCategory === 'All' 
+      ? flashcards 
+      : flashcards.filter(card => card.category === selectedCategory)
+    setShuffledCards(shuffleArray(filteredCards))
+    setCurrentCardIndex(0)
+  }, [selectedCategory])
+
+  const categoryCards = shuffledCards
   const currentCard = categoryCards[currentCardIndex]
   const progress = ((currentCardIndex + 1) / categoryCards.length) * 100
 
-  const handleCategoryChange = (category: Category) => {
+  const handleCategoryChange = (category: Category | 'All') => {
     setSelectedCategory(category)
-    setCurrentCardIndex(0)
   }
 
   const handleNextCard = () => {
@@ -28,8 +47,10 @@ function App() {
     setCurrentCardIndex((prev) => (prev - 1 + categoryCards.length) % categoryCards.length)
   }
 
-  const getCategoryIcon = (category: Category) => {
+  const getCategoryIcon = (category: Category | 'All') => {
     switch (category) {
+      case 'All':
+        return FaLayerGroup
       case 'Cardiovascular':
         return FaHeart
       case 'Respiratory':
@@ -92,7 +113,7 @@ function App() {
             }}
           >
             <HStack spacing={4}>
-              {(['Cardiovascular', 'Respiratory', 'Endocrine', 'Multi System', 'Neurological'] as Category[]).map((category) => {
+              {(['All', 'Cardiovascular', 'Respiratory', 'Endocrine', 'Multi System', 'Neurological'] as const).map((category) => {
                 const Icon = getCategoryIcon(category)
                 return (
                   <Box
