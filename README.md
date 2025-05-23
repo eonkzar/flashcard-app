@@ -4,7 +4,7 @@
 
 An interactive flashcard application for medical students and professionals, built with React, TypeScript, and Chakra UI.
 
-Visit the live app: https://eonkzar.github.io/flashcard-app/
+Visit the live app: [https://eonkzar.github.io/flashcard-app/](https://eonkzar.github.io/flashcard-app/)
 
 ## Features
 
