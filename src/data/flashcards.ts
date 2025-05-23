@@ -951,7 +951,7 @@ export const flashcards: Flashcard[] = [
     question: 'What are the nursing considerations for tracheostomy care?',
     answer: 'Sterile suctioning, stoma care, cuff pressure monitoring, emergency equipment availability.',
     explanation: {
-      detailed: 'Tracheostomy care involves multiple components:\n\n1. Suctioning technique:\n   - Sterile procedure\n   - Proper catheter size\n   - Suction pressure\n2. Stoma care:\n   - Cleaning technique\n   - Dressing changes\n   - Skin assessment\n3. Equipment monitoring:\n   - Cuff pressure checks\n   - Inner cannula cleaning\n   - Emergency supplies\n4. Patient assessment:\n   - Breath sounds\n   - Secretion characteristics\n   - Work of breathing\n5. Complication prevention:\n   - Infection control\n   - Pressure injury\n   - Tube displacement\n6. Patient education:\n   - Communication methods\n   - Self-care techniques\n   - Emergency response',
+      detailed: 'Tracheostomy care involves multiple components:\n\n1. Suctioning technique:\n   - Sterile procedure\n   - Proper catheter size\n   - Suction pressure\n2. Stoma Care:\n   - Cleaning technique\n   - Dressing changes\n   - Skin assessment\n3. Equipment monitoring:\n   - Cuff pressure checks\n   - Inner cannula cleaning\n   - Emergency supplies\n4. Patient assessment:\n   - Breath sounds\n   - Secretion characteristics\n   - Work of breathing\n5. Complication prevention:\n   - Infection control\n   - Pressure injury\n   - Tube displacement\n6. Patient education:\n   - Communication methods\n   - Self-care techniques\n   - Emergency response',
       images: [],
       relatedConcepts: [
         'Airway management',
@@ -1173,17 +1173,17 @@ export const flashcards: Flashcard[] = [
   {
     id: generateId('Multi System', 0),
     category: 'Multi System',
-    question: 'What are the diagnostic criteria for sepsis?',
-    answer: 'Suspected infection plus SOFA score ≥2 points or qSOFA ≥2 points (altered mental status, RR ≥22, SBP ≤100).',
+    question: 'What are the CCRN priorities for shock assessment and management?',
+    answer: 'Shock classification, hemodynamic monitoring, intervention sequence, perfusion markers, and response assessment.',
     explanation: {
-      detailed: 'Sepsis diagnosis is based on specific criteria:\n\n1. Suspected infection plus:\n   - SOFA score ≥2 points OR\n   - qSOFA ≥2 points\n2. qSOFA criteria:\n   - Altered mental status\n   - Respiratory rate ≥22\n   - Systolic BP ≤100\n3. SOFA score components:\n   - Respiratory (PaO2/FiO2)\n   - Coagulation (platelets)\n   - Liver (bilirubin)\n   - Cardiovascular (MAP/vasopressors)\n   - CNS (Glasgow Coma Scale)\n   - Renal (creatinine/urine output)',
+      detailed: 'CCRN shock management priorities:\n\n1. Shock Classification:\n   - Cardiogenic: ↓CO, ↑SVR\n   - Distributive: ↑/↓CO, ↓SVR\n   - Hypovolemic: ↓CO, ↑SVR\n   - Obstructive: ↓CO, ↑SVR\n2. Hemodynamic Parameters:\n   - MAP goals (>65 mmHg)\n   - CVP trends\n   - CO/CI values\n   - SVR calculation\n3. Intervention Sequence:\n   - Initial fluid challenge\n   - Vasopressor selection\n   - Inotrope indications\n   - Mechanical support\n4. Perfusion Markers:\n   - Lactate clearance\n   - ScvO2 values\n   - Urine output\n   - Skin changes\n5. Nursing Responsibilities:\n   - Continuous monitoring\n   - Medication titration\n   - Response assessment\n   - Documentation',
       images: [],
       relatedConcepts: [
-        'SOFA scoring',
-        'qSOFA criteria',
-        'Early recognition',
-        'Organ dysfunction',
-        'Hemodynamic monitoring'
+        'Shock pathophysiology',
+        'Hemodynamic monitoring',
+        'Medication management',
+        'Critical care interventions',
+        'Documentation standards'
       ]
     }
   },
@@ -1362,10 +1362,10 @@ export const flashcards: Flashcard[] = [
   {
     id: generateId('Neurological', 0),
     category: 'Neurological',
-    question: 'What are the components of the Glasgow Coma Scale?',
-    answer: 'Eye opening (4), verbal response (5), and motor response (6), with total score ranging from 3-15.',
+    question: 'What are the CCRN priorities for neurological assessment in critical care?',
+    answer: 'GCS scoring, pupillary response, focal deficits, ICP monitoring, and change recognition.',
     explanation: {
-      detailed: 'The Glasgow Coma Scale (GCS) assesses consciousness level:\n\n1. Eye Opening (4 points):\n   - Spontaneous: 4\n   - To verbal command: 3\n   - To pain: 2\n   - None: 1\n2. Verbal Response (5 points):\n   - Oriented: 5\n   - Confused: 4\n   - Inappropriate words: 3\n   - Incomprehensible sounds: 2\n   - None: 1\n3. Motor Response (6 points):\n   - Obeys commands: 6\n   - Localizes pain: 5\n   - Withdrawal from pain: 4\n   - Flexion to pain: 3\n   - Extension to pain: 2\n   - None: 1',
+      detailed: 'CCRN neurological assessment focus:\n\n1. Glasgow Coma Scale:\n   - Eye opening (4 points):\n     * Spontaneous: 4\n     * To voice: 3\n     * To pain: 2\n     * None: 1\n   - Verbal response (5 points):\n     * Oriented: 5\n     * Confused: 4\n     * Inappropriate: 3\n     * Incomprehensible: 2\n     * None: 1\n   - Motor response (6 points):\n     * Obeys commands: 6\n     * Localizes pain: 5\n     * Withdrawal: 4\n     * Flexion: 3\n     * Extension: 2\n     * None: 1\n2. Pupillary Assessment:\n   - Size and symmetry\n   - Direct/consensual response\n   - Accommodation\n   - Documentation requirements\n3. Focal Deficit Monitoring:\n   - Motor strength/symmetry\n   - Sensory changes\n   - Speech/language\n   - Cranial nerve assessment\n4. ICP Monitoring:\n   - Normal values (5-15 mmHg)\n   - Waveform analysis\n   - CPP calculation\n   - Intervention triggers\n5. Change Recognition:\n   - Trending GCS\n   - Deterioration signs\n   - Emergency response\n   - Documentation requirements',
       images: [
         {
           url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Glasgow_Coma_Scale_Assessment.png/800px-Glasgow_Coma_Scale_Assessment.png',
@@ -1374,11 +1374,11 @@ export const flashcards: Flashcard[] = [
         }
       ],
       relatedConcepts: [
-        'Neurological assessment',
-        'Consciousness level',
-        'Brain injury',
-        'Trauma assessment',
-        'Critical care monitoring'
+        'Neurological monitoring',
+        'Critical care assessment',
+        'Documentation standards',
+        'Emergency response',
+        'Change recognition'
       ]
     }
   },
@@ -1521,35 +1521,581 @@ export const flashcards: Flashcard[] = [
   {
     id: generateId('Neurological', 9),
     category: 'Neurological',
-    question: 'What are the signs of alcohol withdrawal?',
-    answer: 'Tremors, anxiety, tachycardia, hypertension, seizures, delirium tremens.',
+    question: 'What are the CCRN priorities for alcohol withdrawal management in critical care?',
+    answer: 'CIWA-Ar assessment, medication protocol, safety measures, autonomic monitoring, and complication prevention.',
     explanation: {
-      detailed: 'Alcohol withdrawal progresses in stages:\n\n1. Early signs:\n   - Tremors\n   - Anxiety\n   - Autonomic hyperactivity\n\n2. Intermediate phase:\n   - Seizures\n   - Hallucinations\n   - Agitation\n\n3. Late manifestations:\n   - Delirium tremens\n   - Severe autonomic changes\n   - Mental status changes\n\n4. Monitoring needs:\n   - CIWA score\n   - Vital signs\n   - Mental status\n\n5. Risk factors:\n   - Duration of use\n   - Previous withdrawals\n   - Comorbidities\n\n6. Treatment approach:\n   - Benzodiazepines\n   - Supportive care\n   - Prevention of complications',
+      detailed: 'CCRN alcohol withdrawal management:\n\n1. Assessment Protocol:\n   - CIWA-Ar scoring q1h\n   - Vital sign trends\n   - Mental status changes\n   - Safety risk evaluation\n2. Medication Management:\n   - Benzodiazepine protocol\n   - Loading vs. PRN dosing\n   - Adjunct medications\n   - Response assessment\n3. Safety Interventions:\n   - Fall prevention\n   - Seizure precautions\n   - Environmental safety\n   - Staff safety\n4. Autonomic Monitoring:\n   - Cardiovascular status\n   - Temperature trends\n   - Fluid balance\n   - Electrolyte status\n5. Complication Prevention:\n   - Wernicke\'s encephalopathy\n   - Aspiration risk\n   - Dehydration\n   - Metabolic issues\n6. Documentation Requirements:\n   - Assessment findings\n   - Medication response\n   - Safety measures\n   - Care plan updates',
       images: [],
       relatedConcepts: [
         'Withdrawal management',
         'CIWA protocol',
-        'Seizure prevention',
-        'Medication therapy',
-        'Safety measures'
+        'Critical care monitoring',
+        'Safety protocols',
+        'Medication administration'
       ]
     }
   },
   {
     id: generateId('Neurological', 10),
     category: 'Neurological',
-    question: 'What are the signs of subarachnoid hemorrhage?',
-    answer: 'Thunderclap headache, neck stiffness, photophobia, altered consciousness.',
+    question: 'What are the CCRN priorities for subarachnoid hemorrhage management?',
+    answer: 'Neurological assessment, blood pressure control, vasospasm prevention, ICP monitoring, and complication recognition.',
     explanation: {
-      detailed: 'Subarachnoid hemorrhage presents acutely:\n\n1. Classic presentation:\n   - Sudden severe headache\n   - Neck stiffness\n   - Photophobia\n2. Associated symptoms:\n   - Nausea/vomiting\n   - Altered consciousness\n   - Focal deficits\n3. Risk factors:\n   - Hypertension\n   - Aneurysms\n   - Smoking\n4. Grading scales:\n   - Hunt and Hess\n   - Fisher scale\n   - World Federation\n5. Complications:\n   - Vasospasm\n   - Hydrocephalus\n   - Rebleeding\n6. Treatment priorities:\n   - Blood pressure control\n   - Nimodipine\n   - Surgical intervention',
+      detailed: 'CCRN priorities for SAH management:\n\n1. Initial Assessment:\n   - Hunt and Hess grade\n   - GCS monitoring\n   - Focal deficits\n   - Vital signs\n2. Blood Pressure Management:\n   - Target parameters\n   - Medication selection\n   - Continuous monitoring\n   - Response assessment\n3. Vasospasm Prevention:\n   - Nimodipine protocol\n   - Triple-H therapy\n   - TCD monitoring\n   - Clinical signs\n4. ICP Management:\n   - EVD care\n   - Drainage protocols\n   - Positioning\n   - CSF parameters\n5. Complication Monitoring:\n   - Rebleeding signs\n   - Hydrocephalus\n   - Seizure activity\n   - Sodium changes\n6. Nursing Interventions:\n   - Neurological checks q1h\n   - Activity restrictions\n   - Environmental control\n   - Documentation',
       images: [],
       relatedConcepts: [
-        'Neurological emergency',
-        'Aneurysm management',
-        'Vasospasm prevention',
-        'Critical care',
-        'Neurosurgery'
+        'Neurological assessment',
+        'Critical care monitoring',
+        'Medication management',
+        'ICP management',
+        'Emergency response'
       ]
     }
-  }
+  },
+  // Add after the last cardiovascular card
+  {
+    id: generateId('Cardiovascular', 51),
+    category: 'Cardiovascular',
+    question: 'What are the key CCRN test points for ACLS in critical care nursing?',
+    answer: 'High-quality CPR metrics, medication timing/doses, rhythm recognition, post-arrest care priorities, and team dynamics.',
+    explanation: {
+      detailed: 'CCRN exam focus for ACLS includes:\n\n1. High-quality CPR metrics:\n   - Rate 100-120/min\n   - Depth 2-2.4 inches\n   - Full chest recoil\n   - Compression fraction >60%\n2. Medication administration:\n   - Epinephrine q3-5 min\n   - Amiodarone 300mg then 150mg\n   - Timing with rhythm checks\n3. Rhythm recognition priorities:\n   - Shockable vs non-shockable\n   - Organized vs disorganized\n   - Perfusing vs non-perfusing\n4. Post-arrest care bundle:\n   - Temperature management\n   - MAP >65 mmHg\n   - Oxygenation/ventilation\n5. Nursing responsibilities:\n   - Team communication\n   - Documentation\n   - Family support',
+      images: [],
+      relatedConcepts: [
+        'ACLS algorithms',
+        'Code team roles',
+        'Documentation requirements',
+        'Quality metrics',
+        'Post-arrest care'
+      ]
+    }
+  },
+  {
+    id: generateId('Cardiovascular', 52),
+    category: 'Cardiovascular',
+    question: 'What are the CCRN priorities for acute coronary syndrome management?',
+    answer: 'Early recognition, 12-lead ECG interpretation, medication administration sequence, monitoring parameters, and complication prevention.',
+    explanation: {
+      detailed: 'CCRN priorities for ACS management:\n\n1. Early Recognition:\n   - Classic vs atypical symptoms\n   - Risk factor assessment\n   - TIMI/GRACE scoring\n   - Door-to-ECG time\n2. ECG Interpretation:\n   - STEMI criteria\n   - Reciprocal changes\n   - Territory identification\n   - Serial comparison\n3. Medication Protocol:\n   - Aspirin 324mg\n   - Nitroglycerin (contraindications)\n   - Anticoagulation options\n   - Beta-blocker timing\n4. Monitoring Requirements:\n   - Continuous ECG\n   - Vital sign frequency\n   - Cardiac markers\n   - Bleeding risk\n5. Nursing Interventions:\n   - Activity restriction\n   - Oxygen therapy\n   - Pain management\n   - Patient education',
+      images: [],
+      relatedConcepts: [
+        'ACS protocols',
+        'ECG interpretation',
+        'Medication administration',
+        'Complication prevention',
+        'Critical care monitoring'
+      ]
+    }
+  },
+  {
+    id: generateId('Cardiovascular', 53),
+    category: 'Cardiovascular',
+    question: 'What are the hemodynamic parameters in cardiogenic shock?',
+    answer: 'Low cardiac output, elevated filling pressures, systemic hypoperfusion, and end-organ dysfunction.',
+    explanation: {
+      detailed: 'Cardiogenic shock presents with specific parameters:\n\n1. Cardiac Function:\n   - CO <4 L/min\n   - CI <2.2 L/min/m2\n   - EF usually <30%\n2. Filling Pressures:\n   - PCWP >18 mmHg\n   - CVP >12 mmHg\n   - RAP elevated\n3. Systemic Effects:\n   - MAP <65 mmHg\n   - SBP <90 mmHg\n   - Lactate elevation\n4. End-organ Signs:\n   - Oliguria\n   - Mental status changes\n   - Cool extremities\n5. Support Needs:\n   - Inotropes\n   - Mechanical support\n   - Volume status',
+      images: [],
+      relatedConcepts: [
+        'Hemodynamic monitoring',
+        'Shock classification',
+        'Mechanical support',
+        'Medication therapy',
+        'End-organ perfusion'
+      ]
+    }
+  },
+  {
+    id: generateId('Cardiovascular', 54),
+    category: 'Cardiovascular',
+    question: 'What are the stages of heart failure according to ACC/AHA guidelines?',
+    answer: 'Stage A (risk factors), B (structural disease), C (symptoms), and D (refractory symptoms).',
+    explanation: {
+      detailed: 'Heart failure stages progress sequentially:\n\n1. Stage A:\n   - Risk factors present\n   - No structural disease\n   - No symptoms\n   - Prevention focus\n2. Stage B:\n   - Structural disease\n   - Previous MI\n   - LV dysfunction\n   - Asymptomatic\n3. Stage C:\n   - Structural disease\n   - Current/prior symptoms\n   - Reduced EF\n   - Medical therapy\n4. Stage D:\n   - Refractory symptoms\n   - Advanced interventions\n   - End-stage disease\n5. Management Focus:\n   - Risk modification\n   - Medical therapy\n   - Advanced options',
+      images: [],
+      relatedConcepts: [
+        'Prevention strategies',
+        'Medical management',
+        'Advanced therapies',
+        'Prognosis assessment',
+        'Quality of life'
+      ]
+    }
+  },
+  {
+    id: generateId('Cardiovascular', 55),
+    category: 'Cardiovascular',
+    question: 'What are the indications for temporary pacing?',
+    answer: 'Symptomatic bradycardia, high-grade AV block, bridge to permanent pacing, overdrive pacing.',
+    explanation: {
+      detailed: 'Temporary pacing is indicated in several scenarios:\n\n1. Bradycardia:\n   - Symptomatic\n   - Hemodynamically significant\n   - Drug-induced\n2. AV Block:\n   - Complete heart block\n   - Mobitz type II\n   - Symptomatic type I\n3. Bridge Therapy:\n   - Awaiting permanent device\n   - Temporary condition\n   - Medication effect\n4. Special Situations:\n   - Overdrive pacing\n   - Post-cardiac surgery\n   - Catheter procedures\n5. Monitoring Needs:\n   - Capture verification\n   - Threshold testing\n   - Complications watch',
+      images: [],
+      relatedConcepts: [
+        'Pacing modes',
+        'Lead placement',
+        'Complications',
+        'Patient monitoring',
+        'Device management'
+      ]
+    }
+  },
+  {
+    id: generateId('Cardiovascular', 56),
+    category: 'Cardiovascular',
+    question: 'What are the components of a cardiac rehabilitation program?',
+    answer: 'Exercise training, risk factor modification, education, psychosocial support, and lifestyle changes.',
+    explanation: {
+      detailed: 'Cardiac rehabilitation includes multiple components:\n\n1. Exercise Training:\n   - Aerobic exercise\n   - Strength training\n   - Flexibility work\n   - Individualized plans\n2. Risk Modification:\n   - Smoking cessation\n   - Blood pressure control\n   - Lipid management\n   - Diabetes control\n3. Education:\n   - Disease process\n   - Medication adherence\n   - Warning signs\n   - Lifestyle changes\n4. Psychosocial Support:\n   - Stress management\n   - Depression screening\n   - Social support\n5. Lifestyle Changes:\n   - Diet modification\n   - Weight management\n   - Activity planning',
+      images: [],
+      relatedConcepts: [
+        'Exercise prescription',
+        'Risk reduction',
+        'Patient education',
+        'Behavioral change',
+        'Outcome measures'
+      ]
+    }
+  },
+  {
+    id: generateId('Cardiovascular', 57),
+    category: 'Cardiovascular',
+    question: 'What are the phases of cardiac rehabilitation?',
+    answer: 'Phase I (inpatient), Phase II (outpatient monitored), Phase III (outpatient maintenance).',
+    explanation: {
+      detailed: 'Cardiac rehabilitation progresses through phases:\n\n1. Phase I (Inpatient):\n   - Early mobilization\n   - Basic education\n   - Risk assessment\n   - Discharge planning\n2. Phase II (Monitored):\n   - ECG monitoring\n   - Supervised exercise\n   - Education sessions\n   - 8-12 weeks\n3. Phase III (Maintenance):\n   - Independent exercise\n   - Ongoing support\n   - Risk management\n   - Lifestyle focus\n4. Progression Criteria:\n   - Symptom status\n   - Exercise tolerance\n   - Risk factors\n5. Documentation:\n   - Progress notes\n   - Outcome measures\n   - Goal achievement',
+      images: [],
+      relatedConcepts: [
+        'Exercise progression',
+        'Monitoring protocols',
+        'Education content',
+        'Risk stratification',
+        'Outcome tracking'
+      ]
+    }
+  },
+  {
+    id: generateId('Cardiovascular', 58),
+    category: 'Cardiovascular',
+    question: 'What are the components of a cardiopulmonary exercise test?',
+    answer: 'Exercise capacity, gas exchange, ECG changes, blood pressure response, and symptoms.',
+    explanation: {
+      detailed: 'CPET measures multiple parameters:\n\n1. Exercise Capacity:\n   - Peak VO2\n   - Anaerobic threshold\n   - Work rate\n   - Exercise time\n2. Gas Exchange:\n   - VE/VCO2 slope\n   - Respiratory quotient\n   - O2 pulse\n3. Cardiovascular:\n   - ECG changes\n   - BP response\n   - Heart rate reserve\n4. Symptoms:\n   - Dyspnea scale\n   - Fatigue rating\n   - Chest pain\n5. Interpretation:\n   - Weber classification\n   - Prognosis assessment\n   - Exercise prescription',
+      images: [],
+      relatedConcepts: [
+        'Exercise testing',
+        'Gas exchange',
+        'Cardiovascular response',
+        'Exercise prescription',
+        'Risk assessment'
+      ]
+    }
+  },
+  {
+    id: generateId('Cardiovascular', 59),
+    category: 'Cardiovascular',
+    question: 'What are the indications for cardiac MRI?',
+    answer: 'Myocardial viability, cardiac masses, congenital defects, cardiomyopathy evaluation.',
+    explanation: {
+      detailed: 'Cardiac MRI has specific indications:\n\n1. Myocardial Assessment:\n   - Viability testing\n   - Scar quantification\n   - Wall motion\n   - Perfusion studies\n2. Structural Evaluation:\n   - Masses/tumors\n   - Pericardial disease\n   - Congenital defects\n3. Cardiomyopathy:\n   - HCM assessment\n   - ARVD diagnosis\n   - Infiltrative disease\n4. Vascular Studies:\n   - Great vessels\n   - Coronary arteries\n   - Flow assessment\n5. Special Situations:\n   - Pre-procedure planning\n   - Research protocols\n   - Follow-up studies',
+      images: [],
+      relatedConcepts: [
+        'Imaging protocols',
+        'Contrast use',
+        'Tissue characterization',
+        'Flow assessment',
+        'Clinical applications'
+      ]
+    }
+  },
+  {
+    id: generateId('Cardiovascular', 60),
+    category: 'Cardiovascular',
+    question: 'What are the components of a heart failure management program?',
+    answer: 'Medication optimization, symptom monitoring, dietary/fluid management, exercise, education.',
+    explanation: {
+      detailed: 'Heart failure management is comprehensive:\n\n1. Medication Management:\n   - GDMT optimization\n   - Side effect monitoring\n   - Adherence support\n   - Dose titration\n2. Symptom Monitoring:\n   - Daily weights\n   - Symptom diary\n   - Action plans\n   - Red flags\n3. Lifestyle Modifications:\n   - Sodium restriction\n   - Fluid management\n   - Exercise program\n   - Sleep hygiene\n4. Education Components:\n   - Disease process\n   - Medication purpose\n   - Self-monitoring\n   - When to call\n5. Support Services:\n   - Care coordination\n   - Social support\n   - Resources access\n   - Follow-up care',
+      images: [],
+      relatedConcepts: [
+        'Medication optimization',
+        'Self-management',
+        'Patient education',
+        'Quality metrics',
+        'Care coordination'
+      ]
+    }
+  },
+  // Add after the last respiratory card
+  {
+    id: generateId('Respiratory', 51),
+    category: 'Respiratory',
+    question: 'What are the critical CCRN components of a respiratory assessment in ICU?',
+    answer: 'Systematic assessment (inspection, palpation, percussion, auscultation), work of breathing evaluation, ventilator parameters, and gas exchange markers.',
+    explanation: {
+      detailed: 'CCRN focus areas for respiratory assessment:\n\n1. Systematic Assessment:\n   - Inspection: Pattern, symmetry, use of accessory muscles\n   - Palpation: Tactile fremitus, chest expansion\n   - Percussion: Resonance changes, diaphragm excursion\n   - Auscultation: Breath sounds, adventitious sounds\n2. Work of Breathing:\n   - Respiratory rate and pattern\n   - Accessory muscle use\n   - Nasal flaring/retractions\n   - Position of comfort\n3. Ventilator Parameters:\n   - Mode/settings review\n   - Compliance/resistance\n   - Waveform analysis\n   - Alarm settings\n4. Gas Exchange:\n   - ABG interpretation\n   - PaO2/FiO2 ratio\n   - End-tidal CO2\n   - Oxygen saturation\n5. Documentation:\n   - Assessment findings\n   - Interventions\n   - Response to therapy',
+      images: [],
+      relatedConcepts: [
+        'Ventilator management',
+        'ABG interpretation',
+        'Respiratory failure',
+        'Nursing interventions',
+        'Critical care monitoring'
+      ]
+    }
+  },
+  {
+    id: generateId('Respiratory', 52),
+    category: 'Respiratory',
+    question: 'What are the CCRN considerations for mechanical ventilation management?',
+    answer: 'Mode selection, parameter adjustment, weaning assessment, complication prevention, and nursing interventions.',
+    explanation: {
+      detailed: 'CCRN mechanical ventilation focus:\n\n1. Mode Selection Rationale:\n   - Volume vs pressure control\n   - Assist control vs SIMV\n   - PSV applications\n   - APRV indications\n2. Parameter Adjustments:\n   - Tidal volume 4-6 mL/kg IBW\n   - PEEP optimization\n   - FiO2 titration\n   - I:E ratio considerations\n3. Patient Assessment:\n   - Work of breathing\n   - Ventilator synchrony\n   - Sedation needs\n   - Hemodynamic impact\n4. Complication Prevention:\n   - VAP bundle compliance\n   - Pressure injury prevention\n   - Circuit management\n   - Alarm management\n5. Nursing Responsibilities:\n   - Documentation requirements\n   - Daily care bundle\n   - Emergency preparedness\n   - Family education',
+      images: [],
+      relatedConcepts: [
+        'Ventilator management',
+        'Patient safety',
+        'Critical care nursing',
+        'Protocol compliance',
+        'Quality metrics'
+      ]
+    }
+  },
+  {
+    id: generateId('Respiratory', 53),
+    category: 'Respiratory',
+    question: 'What are the components of lung protective ventilation?',
+    answer: 'Low tidal volume, plateau pressure limit, PEEP optimization, permissive hypercapnia.',
+    explanation: {
+      detailed: 'Lung protective ventilation includes:\n\n1. Tidal Volume:\n   - 4-6 mL/kg IBW\n   - Regular calculation\n   - Volume monitoring\n   - Patient tolerance\n2. Pressure Limits:\n   - Plateau <30 cmH2O\n   - Driving pressure\n   - Peak pressure monitoring\n3. PEEP Management:\n   - Individualized setting\n   - Recruitment strategy\n   - Hemodynamic effects\n4. Gas Exchange:\n   - Permissive hypercapnia\n   - Oxygenation goals\n   - pH monitoring\n5. Monitoring:\n   - Compliance changes\n   - Patient synchrony\n   - Complications',
+      images: [],
+      relatedConcepts: [
+        'ARDS management',
+        'Ventilator settings',
+        'Patient monitoring',
+        'Complications',
+        'Outcome measures'
+      ]
+    }
+  },
+  {
+    id: generateId('Respiratory', 54),
+    category: 'Respiratory',
+    question: 'What are the components of a weaning assessment?',
+    answer: 'Respiratory parameters, hemodynamics, mental status, secretion management, underlying condition.',
+    explanation: {
+      detailed: 'Weaning assessment includes:\n\n1. Respiratory Parameters:\n   - RSBI <105\n   - VC >10 mL/kg\n   - NIF >-20 cmH2O\n   - PaO2/FiO2 >200\n2. Hemodynamics:\n   - Stable vitals\n   - No vasopressors\n   - Adequate cardiac function\n3. Mental Status:\n   - Alert/oriented\n   - Following commands\n   - Airway protection\n4. Secretions:\n   - Amount/consistency\n   - Cough strength\n   - Suction frequency\n5. Clinical Status:\n   - Underlying condition\n   - Nutrition status\n   - Muscle strength',
+      images: [],
+      relatedConcepts: [
+        'Weaning protocols',
+        'Assessment tools',
+        'Success predictors',
+        'Failure criteria',
+        'Documentation'
+      ]
+    }
+  },
+  {
+    id: generateId('Respiratory', 55),
+    category: 'Respiratory',
+    question: 'What are the components of chest physiotherapy?',
+    answer: 'Positioning, percussion, vibration, deep breathing exercises, and airway clearance techniques.',
+    explanation: {
+      detailed: 'Chest physiotherapy includes:\n\n1. Positioning:\n   - Postural drainage\n   - Gravity assistance\n   - Comfort measures\n   - Timing considerations\n2. Percussion:\n   - Proper technique\n   - Duration/frequency\n   - Area coverage\n   - Contraindications\n3. Vibration:\n   - Manual techniques\n   - Mechanical devices\n   - Application timing\n4. Breathing Exercises:\n   - Deep breathing\n   - Incentive spirometry\n   - Pursed lips\n5. Airway Clearance:\n   - Coughing techniques\n   - PEP devices\n   - Flutter valve\n   - Acapella',
+      images: [],
+      relatedConcepts: [
+        'Secretion clearance',
+        'Breathing techniques',
+        'Equipment use',
+        'Patient education',
+        'Outcome measures'
+      ]
+    }
+  },
+  {
+    id: generateId('Respiratory', 56),
+    category: 'Respiratory',
+    question: 'What are the components of a pulmonary rehabilitation program?',
+    answer: 'Exercise training, education, breathing techniques, psychosocial support, outcome measurement.',
+    explanation: {
+      detailed: 'Pulmonary rehabilitation includes:\n\n1. Exercise Training:\n   - Endurance training\n   - Strength exercises\n   - Flexibility work\n   - ADL training\n2. Education:\n   - Disease management\n   - Medication use\n   - Energy conservation\n   - Action plans\n3. Breathing Techniques:\n   - Pursed lips\n   - Diaphragmatic\n   - Position strategies\n   - Panic control\n4. Psychosocial Support:\n   - Anxiety management\n   - Depression screening\n   - Support groups\n5. Outcomes:\n   - Exercise tolerance\n   - Quality of life\n   - Symptom scores',
+      images: [],
+      relatedConcepts: [
+        'Exercise prescription',
+        'Patient education',
+        'Breathing strategies',
+        'Quality of life',
+        'Program components'
+      ]
+    }
+  },
+  {
+    id: generateId('Respiratory', 57),
+    category: 'Respiratory',
+    question: 'What are the components of bronchial hygiene therapy?',
+    answer: 'Hydration, humidification, bronchodilators, mucolytics, and airway clearance techniques.',
+    explanation: {
+      detailed: 'Bronchial hygiene includes:\n\n1. Hydration:\n   - Oral intake\n   - IV fluids\n   - Humidity needs\n   - Assessment tools\n2. Humidification:\n   - Device selection\n   - Temperature control\n   - Monitoring needs\n   - Complications\n3. Medications:\n   - Bronchodilators\n   - Mucolytics\n   - Timing/sequence\n   - Delivery method\n4. Clearance Techniques:\n   - Manual methods\n   - Device assistance\n   - Patient teaching\n5. Monitoring:\n   - Secretion changes\n   - Breathing effort\n   - Effectiveness\n   - Complications',
+      images: [],
+      relatedConcepts: [
+        'Secretion management',
+        'Device selection',
+        'Medication delivery',
+        'Patient education',
+        'Outcome assessment'
+      ]
+    }
+  },
+  {
+    id: generateId('Respiratory', 58),
+    category: 'Respiratory',
+    question: 'What are the components of a tracheostomy care protocol?',
+    answer: 'Suctioning, stoma care, cuff management, emergency equipment, patient education.',
+    explanation: {
+      detailed: 'Tracheostomy care includes:\n\n1. Suctioning:\n   - Sterile technique\n   - Frequency assessment\n   - Depth measurement\n   - Complications watch\n2. Stoma Care:\n   - Cleaning procedure\n   - Dressing changes\n   - Skin assessment\n   - Infection prevention\n3. Cuff Management:\n   - Pressure checks\n   - Deflation trials\n   - Documentation\n   - Complications\n4. Emergency Equipment:\n   - Spare tubes\n   - Suction equipment\n   - Oxygen setup\n   - Emergency kit\n5. Education:\n   - Patient/family teaching\n   - Care techniques\n   - Emergency response\n   - Follow-up care',
+      images: [],
+      relatedConcepts: [
+        'Airway management',
+        'Infection control',
+        'Emergency preparedness',
+        'Patient education',
+        'Documentation'
+      ]
+    }
+  },
+  {
+    id: generateId('Respiratory', 59),
+    category: 'Respiratory',
+    question: 'What are the components of oxygen therapy assessment?',
+    answer: 'Oxygen needs, delivery method, flow rate, monitoring parameters, weaning criteria.',
+    explanation: {
+      detailed: 'Oxygen therapy assessment includes:\n\n1. Needs Assessment:\n   - SpO2 goals\n   - Work of breathing\n   - Activity tolerance\n   - Disease process\n2. Delivery Method:\n   - Device selection\n   - FiO2 requirements\n   - Patient comfort\n   - Humidity needs\n3. Flow Settings:\n   - Initial rate\n   - Titration protocol\n   - Activity adjustment\n   - Conservation\n4. Monitoring:\n   - SpO2 trends\n   - Work of breathing\n   - Tolerance/comfort\n   - Complications\n5. Weaning:\n   - Criteria assessment\n   - Protocol following\n   - Documentation\n   - Follow-up plan',
+      images: [],
+      relatedConcepts: [
+        'Oxygen delivery',
+        'Device selection',
+        'Patient monitoring',
+        'Documentation',
+        'Safety measures'
+      ]
+    }
+  },
+  {
+    id: generateId('Respiratory', 60),
+    category: 'Respiratory',
+    question: 'What are the components of a respiratory emergency cart?',
+    answer: 'Airway equipment, oxygen delivery devices, medications, monitoring equipment, documentation tools.',
+    explanation: {
+      detailed: 'Emergency cart contents include:\n\n1. Airway Equipment:\n   - Various ETT sizes\n   - Laryngoscopes\n   - Oral/nasal airways\n   - Suction supplies\n2. Oxygen Delivery:\n   - Masks/cannulas\n   - Bag-valve masks\n   - Flow meters\n   - Connectors\n3. Medications:\n   - Emergency drugs\n   - Delivery devices\n   - Calculation aids\n   - Documentation\n4. Monitoring:\n   - Pulse oximeter\n   - End-tidal CO2\n   - BP equipment\n   - ECG capability\n5. Documentation:\n   - Checklists\n   - Record forms\n   - Reference materials\n   - Protocols',
+      images: [],
+      relatedConcepts: [
+        'Emergency response',
+        'Equipment checks',
+        'Team training',
+        'Documentation',
+        'Quality assurance'
+      ]
+    }
+  },
+  {
+    id: generateId('Multi System', 51),
+    category: 'Multi System',
+    question: 'What are the key CCRN test points for hemodynamic monitoring?',
+    answer: 'Normal values, waveform analysis, cardiac output calculations, preload/afterload assessment, and nursing interventions.',
+    explanation: {
+      detailed: 'CCRN hemodynamic monitoring focus:\n\n1. Normal Values:\n   - CVP: 2-6 mmHg\n   - PAWP: 8-12 mmHg\n   - CO: 4-8 L/min\n   - SVR: 800-1200 dynes/sec/cm5\n2. Waveform Analysis:\n   - Normal vs abnormal patterns\n   - Troubleshooting artifacts\n   - Position effects\n   - Damping identification\n3. Calculations:\n   - Cardiac output\n   - SVR/PVR\n   - Cardiac index\n   - Oxygen delivery/consumption\n4. Clinical Correlation:\n   - Shock states\n   - Volume status\n   - Cardiac function\n   - Treatment response\n5. Nursing Interventions:\n   - Line maintenance\n   - Troubleshooting\n   - Documentation\n   - Provider notification',
+      images: [],
+      relatedConcepts: [
+        'Hemodynamic monitoring',
+        'Shock management',
+        'Critical care calculations',
+        'Nursing assessment',
+        'Clinical decision making'
+      ]
+    }
+  },
+  {
+    id: generateId('Endocrine', 51),
+    category: 'Endocrine',
+    question: 'What are the CCRN priorities for managing diabetic emergencies in ICU?',
+    answer: 'DKA vs HHS differentiation, insulin protocols, fluid/electrolyte management, monitoring parameters, and complication prevention.',
+    explanation: {
+      detailed: 'CCRN diabetic emergency management:\n\n1. Differentiation:\n   - DKA: Ketosis, acidosis, moderate hyperglycemia\n   - HHS: Severe hyperglycemia, no ketosis, severe dehydration\n   - Mixed presentations\n2. Treatment Protocols:\n   - Insulin drip calculation\n   - Fluid replacement\n   - Electrolyte correction\n   - Transition timing\n3. Monitoring Requirements:\n   - Glucose q1h\n   - Electrolytes q2-4h\n   - Anion gap closure\n   - Mental status\n4. Complication Prevention:\n   - Cerebral edema\n   - Hypoglycemia\n   - Hypokalemia\n   - Fluid overload\n5. Nursing Interventions:\n   - Hourly monitoring\n   - Protocol compliance\n   - Documentation\n   - Patient education',
+      images: [],
+      relatedConcepts: [
+        'Diabetes management',
+        'Critical care protocols',
+        'Fluid/electrolyte balance',
+        'Monitoring parameters',
+        'Nursing assessment'
+      ]
+    }
+  },
+  {
+    id: generateId('Multi System', 52),
+    category: 'Multi System',
+    question: 'What are the CCRN priorities for managing sepsis in critical care?',
+    answer: 'Early recognition, bundle compliance, hemodynamic management, source control, and monitoring parameters.',
+    explanation: {
+      detailed: 'CCRN sepsis management priorities:\n\n1. Early Recognition:\n   - SOFA scoring\n   - qSOFA criteria\n   - Sepsis vs septic shock\n   - Time zero documentation\n2. Hour-1 Bundle:\n   - Lactate measurement\n   - Blood cultures\n   - Broad-spectrum antibiotics\n   - Crystalloid resuscitation\n   - Vasopressors for MAP <65\n3. Hemodynamic Management:\n   - Fluid responsiveness\n   - Vasopressor selection\n   - MAP targets\n   - Perfusion markers\n4. Monitoring Requirements:\n   - Vital signs q15min\n   - Lactate trending\n   - ScvO2 monitoring\n   - Urine output\n5. Nursing Interventions:\n   - Bundle compliance\n   - Documentation\n   - Line management\n   - Family support',
+      images: [],
+      relatedConcepts: [
+        'Sepsis bundles',
+        'Hemodynamic monitoring',
+        'Antibiotic therapy',
+        'Shock management',
+        'Quality metrics'
+      ]
+    }
+  },
+  {
+    id: generateId('Neurological', 51),
+    category: 'Neurological',
+    question: 'What are the CCRN priorities for stroke care in ICU?',
+    answer: 'Assessment scales, post-tPA monitoring, complication prevention, neurological checks, and protocol compliance.',
+    explanation: {
+      detailed: 'CCRN stroke care priorities:\n\n1. Assessment Scales:\n   - NIHSS components\n   - GCS trending\n   - Hunt and Hess\n   - Modified Rankin\n2. Post-tPA Monitoring:\n   - BP parameters\n   - Neurological checks q15min\n   - Bleeding precautions\n   - Site monitoring\n3. Complication Prevention:\n   - Blood pressure control\n   - Aspiration prevention\n   - DVT prophylaxis\n   - Pressure injury\n4. Protocol Requirements:\n   - Swallow evaluation\n   - Positioning\n   - Activity restrictions\n   - Medication timing\n5. Nursing Documentation:\n   - Assessment findings\n   - Intervention timing\n   - Response to treatment\n   - Family education',
+      images: [],
+      relatedConcepts: [
+        'Stroke protocols',
+        'Neurological assessment',
+        'Critical care monitoring',
+        'Complication prevention',
+        'Documentation standards'
+      ]
+    }
+  },
+  {
+    id: generateId('Respiratory', 61),
+    category: 'Respiratory',
+    question: 'What are the CCRN priorities for ARDS management?',
+    answer: 'Lung-protective ventilation, prone positioning criteria, oxygenation goals, hemodynamic stability, and monitoring parameters.',
+    explanation: {
+      detailed: 'CCRN ARDS management focus:\n\n1. Ventilation Strategy:\n   - Tidal volume 4-6 mL/kg IBW\n   - Plateau pressure <30 cmH2O\n   - PEEP optimization\n   - Driving pressure <15\n2. Prone Positioning:\n   - Indications (P/F <150)\n   - Contraindications\n   - Safety checklist\n   - Team coordination\n3. Oxygenation Goals:\n   - SpO2 88-95%\n   - PaO2 55-80 mmHg\n   - FiO2 titration\n   - PEEP/FiO2 table\n4. Monitoring Requirements:\n   - ABG frequency\n   - Ventilator parameters\n   - Hemodynamic stability\n   - Sedation assessment\n5. Nursing Care Bundle:\n   - HOB elevation\n   - Oral care\n   - Suctioning protocol\n   - Skin assessment',
+      images: [],
+      relatedConcepts: [
+        'Mechanical ventilation',
+        'Prone positioning',
+        'Oxygenation strategies',
+        'Patient safety',
+        'Protocol compliance'
+      ]
+    }
+  },
+  {
+    id: generateId('Cardiovascular', 61),
+    category: 'Cardiovascular',
+    question: 'What are the CCRN priorities for mechanical circulatory support?',
+    answer: 'Device management, anticoagulation, complication recognition, troubleshooting, and emergency response.',
+    explanation: {
+      detailed: 'CCRN mechanical circulatory support focus:\n\n1. Device Parameters:\n   - IABP timing\n   - VAD flow rates\n   - ECMO settings\n   - Console management\n2. Anticoagulation:\n   - Protocol adherence\n   - ACT/PTT targets\n   - Bleeding precautions\n   - Reversal protocols\n3. Complication Recognition:\n   - Device malfunction\n   - Thrombosis/bleeding\n   - Infection signs\n   - End-organ dysfunction\n4. Daily Assessment:\n   - Flow adequacy\n   - Position verification\n   - Site inspection\n   - Power management\n5. Emergency Response:\n   - Power failure\n   - Circuit disruption\n   - Cardiac arrest\n   - Transport planning',
+      images: [],
+      relatedConcepts: [
+        'Device management',
+        'Anticoagulation',
+        'Emergency response',
+        'Critical care monitoring',
+        'Patient safety'
+      ]
+    }
+  },
+  {
+    id: generateId('Endocrine', 61),
+    category: 'Endocrine',
+    question: 'What are the CCRN priorities for DKA management in critical care?',
+    answer: 'Fluid resuscitation protocols, insulin therapy, electrolyte monitoring, acid-base balance, and complication prevention.',
+    explanation: {
+      detailed: 'CCRN DKA management priorities:\n\n1. Initial Assessment:\n   - Mental status changes\n   - Vital sign trends\n   - Hydration status\n   - Lab value interpretation\n2. Fluid Management:\n   - Initial bolus calculation\n   - Maintenance rate\n   - Replacement guidelines\n   - Response monitoring\n3. Insulin Protocol:\n   - Loading dose calculation\n   - Continuous infusion rates\n   - Titration parameters\n   - Transition criteria\n4. Monitoring Requirements:\n   - Glucose q1h\n   - Electrolytes q2-4h\n   - Anion gap trending\n   - I&O tracking\n5. Complication Prevention:\n   - Cerebral edema signs\n   - Electrolyte derangements\n   - Fluid overload\n   - Hypoglycemia',
+      images: [],
+      relatedConcepts: [
+        'Diabetes management',
+        'Critical care monitoring',
+        'Fluid/electrolyte balance',
+        'Insulin protocols',
+        'Emergency response'
+      ]
+    }
+  },
+  {
+    id: generateId('Neurological', 61),
+    category: 'Neurological',
+    question: 'What are the CCRN priorities for acute stroke management?',
+    answer: 'Time management, neurological assessment, thrombolytic protocol, blood pressure control, and complication monitoring.',
+    explanation: {
+      detailed: 'CCRN stroke management priorities:\n\n1. Time Management:\n   - Last known well\n   - Door-to-needle time\n   - Imaging priorities\n   - tPA window\n2. Assessment Protocol:\n   - NIHSS scoring\n   - Neuro checks q1h\n   - Swallow evaluation\n   - Documentation\n3. Thrombolytic Management:\n   - Inclusion/exclusion\n   - Mixing/administration\n   - Monitoring protocol\n   - Complication signs\n4. BP Management:\n   - Pre/post tPA goals\n   - Medication selection\n   - Titration protocol\n   - Response assessment\n5. Monitoring Requirements:\n   - Neuro deterioration\n   - Bleeding signs\n   - Vital sign trends\n   - Airway status',
+      images: [],
+      relatedConcepts: [
+        'Stroke protocols',
+        'Neurological assessment',
+        'Emergency response',
+        'Medication management',
+        'Patient safety'
+      ]
+    }
+  },
+  {
+    id: generateId('Multi System', 61),
+    category: 'Multi System',
+    question: 'What are the CCRN priorities for post-cardiac arrest care?',
+    answer: 'Temperature management, hemodynamic optimization, ventilation control, neurological monitoring, and systems-based care.',
+    explanation: {
+      detailed: 'CCRN post-arrest care priorities:\n\n1. Temperature Management:\n   - Target selection\n   - Cooling methods\n   - Rewarming protocol\n   - Shivering control\n2. Hemodynamic Goals:\n   - MAP targets\n   - Vasopressor selection\n   - Fluid management\n   - Cardiac monitoring\n3. Ventilation Strategy:\n   - Normocapnia goals\n   - Oxygenation targets\n   - Lung protection\n   - Airway management\n4. Neuro Assessment:\n   - Sedation breaks\n   - Pupillary response\n   - Motor testing\n   - EEG monitoring\n5. Systems Management:\n   - Glycemic control\n   - DVT prophylaxis\n   - GI protection\n   - Infection prevention',
+      images: [],
+      relatedConcepts: [
+        'Post-arrest care',
+        'Temperature management',
+        'Hemodynamic monitoring',
+        'Neurological assessment',
+        'Systems-based care'
+      ]
+    }
+  },
+  {
+    id: generateId('Respiratory', 62),
+    category: 'Respiratory',
+    question: 'What are the CCRN priorities for ventilator weaning assessment?',
+    answer: 'Readiness criteria, spontaneous breathing trial protocol, hemodynamic stability, work of breathing assessment, and extubation planning.',
+    explanation: {
+      detailed: 'CCRN ventilator weaning priorities:\n\n1. Readiness Assessment:\n   - Oxygenation (P/F >200)\n   - PEEP ≤5-8 cmH2O\n   - FiO2 ≤0.4-0.5\n   - Hemodynamic stability\n2. SBT Protocol:\n   - Mode selection\n   - Duration planning\n   - Parameter limits\n   - Failure criteria\n3. Work of Breathing:\n   - Respiratory rate\n   - Accessory muscle use\n   - Tidal volume adequacy\n   - Rapid shallow breathing index\n4. Extubation Planning:\n   - Airway assessment\n   - Cuff leak test\n   - Equipment preparation\n   - Post-extubation support\n5. Documentation:\n   - Assessment findings\n   - Trial results\n   - Team communication\n   - Care plan updates',
+      images: [],
+      relatedConcepts: [
+        'Mechanical ventilation',
+        'Weaning protocols',
+        'Respiratory assessment',
+        'Clinical decision-making',
+        'Patient safety'
+      ]
+    }
+  },
+  {
+    id: generateId('Endocrine', 62),
+    category: 'Endocrine',
+    question: 'What are the CCRN priorities for thyroid storm management?',
+    answer: 'Recognition of symptoms, medication administration sequence, temperature control, cardiovascular monitoring, and complication prevention.',
+    explanation: {
+      detailed: 'CCRN thyroid storm management:\n\n1. Recognition Criteria:\n   - Hyperthermia >38.5°C\n   - Tachycardia/arrhythmias\n   - CNS dysfunction\n   - GI/hepatic dysfunction\n2. Medication Protocol:\n   - PTU/Methimazole timing\n   - Iodine administration\n   - Beta-blocker selection\n   - Steroid therapy\n3. Temperature Management:\n   - Cooling methods\n   - Core monitoring\n   - Shivering prevention\n   - Response assessment\n4. Cardiovascular Care:\n   - Rhythm monitoring\n   - Rate control\n   - Volume status\n   - Hemodynamic goals\n5. Complication Prevention:\n   - Organ failure signs\n   - Fluid/electrolyte balance\n   - Infection risk\n   - Stress ulcers',
+      images: [],
+      relatedConcepts: [
+        'Endocrine emergency',
+        'Critical care monitoring',
+        'Medication administration',
+        'Temperature management',
+        'Cardiovascular care'
+      ]
+    }
+  },
+  {
+    id: generateId('Multi System', 62),
+    category: 'Multi System',
+    question: 'What are the CCRN priorities for septic shock management?',
+    answer: 'Early recognition, bundle implementation, hemodynamic optimization, source control, and organ support measures.',
+    explanation: {
+      detailed: 'CCRN septic shock priorities:\n\n1. Early Recognition:\n   - SOFA scoring\n   - Lactate trending\n   - Tissue perfusion\n   - Mental status\n2. Hour-1 Bundle:\n   - Lactate measurement\n   - Blood cultures\n   - Broad-spectrum antibiotics\n   - Crystalloid resuscitation\n3. Hemodynamic Goals:\n   - MAP ≥65 mmHg\n   - Vasopressor selection\n   - Fluid responsiveness\n   - ScvO2 optimization\n4. Source Control:\n   - Culture results\n   - Imaging studies\n   - Procedure timing\n   - Antibiotic adjustment\n5. Organ Support:\n   - Ventilation strategy\n   - Renal protection\n   - Glycemic control\n   - Nutrition support\n6. Nursing Monitoring:\n   - Hemodynamic trends\n   - Organ dysfunction\n   - Response to therapy\n   - Bundle compliance',
+      images: [],
+      relatedConcepts: [
+        'Sepsis management',
+        'Hemodynamic monitoring',
+        'Bundle implementation',
+        'Critical care',
+        'Protocol compliance'
+      ]
+    }
+  },
 ]; 

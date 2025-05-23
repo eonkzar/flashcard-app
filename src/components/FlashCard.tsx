@@ -312,7 +312,7 @@ const FlashCard = ({
                 }
               }}
               dangerouslySetInnerHTML={{
-                __html: explanation.replace(/^(\d+\.)/gm, '<ol><li>$1')
+                __html: explanation.replace(/^(\d+\.)/gm, '<ol>$1')
                                    .replace(/\n- /g, '</li><li>')
                                    .replace(/(?=\n\d+\.)/g, '</li></ol>')
                                    .replace(/^- /gm, '<ul><li>')
