@@ -299,13 +299,16 @@ const FlashCard = ({
                 '& > ol': {
                   listStyleType: 'decimal',
                   pl: 4,
+                  mb: 8,
                   '& > li': {
-                    mb: 6,
+                    mb: 4,
+                    pb: 4,
                   }
                 },
                 '& ul': {
                   listStyleType: 'disc',
                   pl: 4,
+                  mt: 2,
                   mb: 4,
                   '& > li': {
                     mb: 2,
@@ -313,11 +316,20 @@ const FlashCard = ({
                 }
               }}
               dangerouslySetInnerHTML={{
-                __html: explanation.replace(/^(\d+\.)/gm, '<ol>$1')
-                                   .replace(/\n- /g, '</li><li>')
-                                   .replace(/(?=\n\d+\.)/g, '</li></ol>')
-                                   .replace(/^- /gm, '<ul><li>')
-                                   .replace(/(?=\n\n)/g, '</li></ul>')
+                __html: explanation
+                  .split(/(?=\n\d+\.)/).map(section => {
+                    if (section.trim().match(/^\d+\./)) {
+                      // Handle numbered section
+                      return `<ol>${section
+                        .replace(/^(\d+\.)/, '<li>$1')
+                        .replace(/\n- /g, '</li></ol><ul><li>')
+                        .replace(/\n(?=\d+\.)/g, '</li>')}</li></ol>`;
+                    }
+                    return section;
+                  })
+                  .join('')
+                  .replace(/(?<=<\/li>)<\/ol><ol>/g, '') // Clean up adjacent ol tags
+                  .replace(/<\/ul>(?!\n)/g, '</ul><br/>') // Add space after ul
               }}
             />
 
