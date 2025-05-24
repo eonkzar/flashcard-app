@@ -300,12 +300,13 @@ const FlashCard = ({
                   listStyleType: 'decimal',
                   pl: 4,
                   '& > li': {
-                    mb: 4,
+                    mb: 6,
                   }
                 },
                 '& ul': {
                   listStyleType: 'disc',
                   pl: 4,
+                  mb: 4,
                   '& > li': {
                     mb: 2,
                   }
