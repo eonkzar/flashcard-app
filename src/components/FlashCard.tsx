@@ -299,37 +299,41 @@ const FlashCard = ({
                 '& > ol': {
                   listStyleType: 'decimal',
                   pl: 4,
-                  mb: 8,
+                  mb: 4,
                   '& > li': {
                     mb: 4,
-                    pb: 4,
+                    display: 'block'
                   }
                 },
                 '& ul': {
                   listStyleType: 'disc',
                   pl: 4,
-                  mt: 2,
                   mb: 4,
                   '& > li': {
-                    mb: 2,
+                    mb: 2
                   }
                 }
               }}
               dangerouslySetInnerHTML={{
                 __html: explanation
-                  .split(/(?=\n\d+\.)/).map(section => {
-                    if (section.trim().match(/^\d+\./)) {
-                      // Handle numbered section
-                      return `<ol>${section
-                        .replace(/^(\d+\.)/, '<li>$1')
-                        .replace(/\n- /g, '</li></ol><ul><li>')
-                        .replace(/\n(?=\d+\.)/g, '</li>')}</li></ol>`;
+                  .split('\n')
+                  .map(line => {
+                    if (line.match(/^\d+\./)) {
+                      // Start a new numbered item
+                      return `</li></ol><ol><li>${line}`;
+                    } else if (line.match(/^- /)) {
+                      // Handle bullet points
+                      return `<ul><li>${line.substring(2)}</li></ul>`;
+                    } else if (line.trim() === '') {
+                      // Handle empty lines
+                      return '<br/>';
                     }
-                    return section;
+                    return line;
                   })
-                  .join('')
-                  .replace(/(?<=<\/li>)<\/ol><ol>/g, '') // Clean up adjacent ol tags
-                  .replace(/<\/ul>(?!\n)/g, '</ul><br/>') // Add space after ul
+                  .join('\n')
+                  .replace(/^<\/li><\/ol>/, '') // Remove extra closing tags at start
+                  .replace(/<\/ol>$/, '</li></ol>') // Ensure proper closing
+                  .replace(/<\/ul><ul>/g, '') // Clean up adjacent ul tags
               }}
             />
 
