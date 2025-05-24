@@ -8,8 +8,10 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
+    manifest: true,
     rollupOptions: {
       output: {
+        manualChunks: undefined,
         assetFileNames: (assetInfo) => {
           const info = assetInfo.name.split('.')
           const ext = info[info.length - 1]
@@ -19,7 +21,7 @@ export default defineConfig({
           return `assets/[name]-[hash][extname]`
         },
         chunkFileNames: 'assets/js/[name]-[hash].js',
-        entryFileNames: 'assets/js/index.js',
+        entryFileNames: 'assets/js/[name]-[hash].js',
       },
     },
   },
